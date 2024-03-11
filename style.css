@@ -369,7 +369,7 @@ template {
 
 * {
   color: #fffffffa;
-  border: 1px solid limegreen;
+  /* border: 1px solid limegreen; */
 }
 
 body {
@@ -379,4 +379,37 @@ body {
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 4fr;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+}
+
+/* .announcements,
+.projects,
+.trending {
+  border: 1px solid limegreen;
+} */
+
+.dash {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 100px;
+}
+
+.projects {
+  grid-column: 1 / 1;
+  grid-row: 1 / -1;
+}
+
+.announcements {
+  grid-column: 2 / 2;
+  grid-row: 1;
+}
+
+.trending {
+  grid-column: 2 / 2;
+  grid-row: 2;
 }
