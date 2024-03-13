@@ -370,19 +370,21 @@ body {
 aside {
   background-color: rgb(48, 48, 48);
   height: 100%;
+  min-width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr 1fr;
 }
 
-.dash-icons .dashboard-logo {
+.dashboard-logo {
   width: 40px;
   height: 40px;
 }
 
-.dash-icons svg {
-  width: 25px;
-  height: 25px;
+svg {
+  /* border: 2px solid rgba(255, 255, 255, 0.379); */
+  border-radius: 8px;
+  height: 24px;
+  width: auto;
   fill: rgba(255, 255, 255, 0.9);
 }
 
@@ -405,4 +407,24 @@ main div {
 
 main div:last-child {
   background-color: lightsalmon;
+}
+
+.dash-title {
+  display: flex;
+  align-items: center;
+  padding-left: 14px;
+}
+
+.dash-title h1 {
+  padding-left: 14px;
+}
+
+.dash-buttons div {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.dash-buttons h3 {
+  margin-left: 20px;
 }
