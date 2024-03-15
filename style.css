@@ -398,18 +398,48 @@ main {
 }
 
 nav {
-  background-color: lightgreen;
+  padding-top: 8px;
+  background-color: rgb(60, 60, 60);
   grid-column: 1 / -1;
   display: grid;
   grid-template-rows: 1fr 1.5fr;
 }
 
-main div {
-  background-color: coral;
+.nav-top {
+  display: flex;
+  align-items: center;
+  padding: 0 80px 0 50px;
+  justify-content: space-between;
 }
 
-main div:last-child {
-  background-color: lightsalmon;
+.search-section svg {
+  padding-right: 16px;
+}
+
+.search-section {
+  width: 800px;
+}
+
+.user-section {
+  gap: 24px;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+nav input {
+  height: 30px;
+  width: 100%;
+  border-style: none;
+  border-radius: 15px;
+}
+
+.user-img-small {
+  object-fit: cover;
+  max-width: 40px;
+  border-radius: 100px;
 }
 
 .dash-title {
