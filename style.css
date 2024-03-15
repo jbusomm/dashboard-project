@@ -359,12 +359,13 @@ body {
 body {
   background-color: rgb(81, 121, 157);
   color: rgba(255, 255, 255, 0.9);
+  font-family: "Rubik", Times, serif;
 }
 
 .container {
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr 6fr;
+  grid-template-columns: 1fr 5fr;
 }
 
 aside {
@@ -372,7 +373,7 @@ aside {
   height: 100%;
   min-width: 100%;
   display: grid;
-  grid-template-rows: 100px 1fr 1fr;
+  grid-template-rows: 100px 1fr 1.4fr;
 }
 
 .dashboard-logo {
@@ -399,6 +400,8 @@ main {
 nav {
   background-color: lightgreen;
   grid-column: 1 / -1;
+  display: grid;
+  grid-template-rows: 1fr 1.5fr;
 }
 
 main div {
@@ -423,6 +426,7 @@ main div:last-child {
   display: flex;
   align-items: center;
   padding-left: 20px;
+  line-height: 14px;
 }
 
 .dash-buttons h3 {
