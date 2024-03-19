@@ -370,7 +370,7 @@ body {
 
 aside {
   background-color: rgb(48, 48, 48);
-  height: 100%;
+  height: 100vh;
   min-width: 100%;
   display: grid;
   grid-template-rows: 100px 1fr 1.4fr;
@@ -390,7 +390,7 @@ svg {
 }
 
 main {
-  height: 100%;
+  height: 100vh;
   background-color: aquamarine;
   display: grid;
   grid-template-rows: 1fr 5fr;
@@ -452,13 +452,14 @@ nav input {
 .greeting p,
 h2 {
   margin: 4px;
+  margin-left: 20px;
 }
 
 .nav-bottom button {
   text-align: center;
   padding: 8px 12px 8px 12px;
-  width: 80px;
-  margin: 12px;
+  width: 90px;
+  margin-left: 28px;
   border-style: none;
   border-radius: 50px;
 }
@@ -471,7 +472,7 @@ h2 {
 
 .user-img-big {
   object-fit: cover;
-  max-width: 100px;
+  max-width: 80px;
   border-radius: 100px;
 }
 
@@ -494,4 +495,23 @@ h2 {
 
 .dash-buttons h3 {
   margin-left: 20px;
+}
+
+.proj-container {
+  display: grid;
+  grid-template-columns: 350px 350px;
+  grid-template-rows: 200px 200px 200px;
+  gap: 24px;
+}
+
+.project {
+  color: black;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  border-left: 8px solid #f0b429;
+  padding: 0 24px 0 24px;
+}
+
+.project-wrap {
+  height: 100%;
 }
